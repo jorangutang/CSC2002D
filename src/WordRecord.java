@@ -68,10 +68,6 @@ public class WordRecord {
 		return fallingSpeed;
 	}
 
-	public synchronized void setPos(int x, int y) {
-		setY(y);
-		setX(x);
-	}
 	public synchronized void resetPos() {
 		setY(0);
 	}
@@ -80,13 +76,11 @@ public class WordRecord {
 		resetPos();
 		text=dict.getNewWord();
 		dropped=false;
-		fallingSpeed=(int)(Math.random() * (maxWait-minWait)+minWait); 
-		//System.out.println(getWord() + " falling speed = " + getSpeed());
+		fallingSpeed=(int)(Math.random() * (maxWait-minWait)+minWait);
 
 	}
 	
 	public synchronized boolean matchWord(String typedText) throws NullPointerException{
-		//System.out.println("Matching against: "+text);
 		if (typedText.equals(this.text)) {
 			resetWord();
 			return true;
@@ -97,11 +91,11 @@ public class WordRecord {
 	}
 	
 
-	public synchronized  void drop(int inc) {
+	public synchronized void drop(int inc) {
 		setY(y+inc);
 	}
 	
-	public synchronized  boolean dropped() {
+	public synchronized boolean dropped() {
 		return dropped;
 	}
 

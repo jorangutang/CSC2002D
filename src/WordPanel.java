@@ -16,7 +16,7 @@ public class WordPanel extends JPanel implements Runnable {
 		private WordRecord[] words;
 		private int noWords;
 		private int maxY;
-		public static volatile int inc = 0;
+		static volatile int inc = 0;
 
 
 		public void paintComponent(Graphics g) {
@@ -44,11 +44,17 @@ public class WordPanel extends JPanel implements Runnable {
 		}
 
 
+        static synchronized void setbacktozero(){
+		    WordPanel.inc = 0;
+        }
 
+        static synchronized void increment(){
+		    inc++;
+        }
 
 		public void run() {
             WordRecord current = words[inc];
-            inc++;
+            WordPanel.increment();
             int total = WordApp.totalWords;
 
 

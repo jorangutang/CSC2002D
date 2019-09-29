@@ -104,7 +104,7 @@ public class WordApp {
 			      public void actionPerformed(ActionEvent e)
 			      {
 			          WordPanel.done = false;
-			          WordPanel.inc = 0;
+			          WordPanel.setbacktozero();
 			    	  startB.setEnabled(true);
 			    	  score.resetScore();
                       caught.setText("Caught: " + score.getCaught() + "    ");
@@ -119,21 +119,29 @@ public class WordApp {
         {
             public void actionPerformed(ActionEvent e)
             {
-                System.out.println("in");
                 if (WordPanel.done == true){
-                    System.out.println("done");
                     WordPanel.done = false;
                 }
                 else { WordPanel.done = true;
-                    WordPanel.inc = 0;
+                    WordPanel.setbacktozero();
                     StartGame();
                 }
+            }
+        });
+        JButton quit = new JButton("Quit");
+        quit.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                frame.setVisible(false);
+                System.exit(0);
             }
         });
 
 
         b.add(startB);
 		b.add(endB);
+		b.add(quit);
 		b.add(PauseplayB);
 		
 		g.add(b);
@@ -155,7 +163,10 @@ public class WordApp {
     }
     public static void ViewinfoBox()
     {
-        JOptionPane.showMessageDialog(null, "Your Score: " + score.getScore(), "Results:", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Your Score: " + score.getScore() + "\n" + "Words caught: "
+                        + score.getCaught() + "\n"
+                        + "Words missed: " + score.getMissed()
+                        , "Results:", JOptionPane.INFORMATION_MESSAGE);
     }
 	
     public static String[] getDictFromFile(String filename) {
@@ -182,12 +193,6 @@ public class WordApp {
         for (int i = 0; i < noWords; i++) {
             Thread Wthread = new Thread(w);
             Wthread.start();
-            try {
-                Wthread.sleep(2);
-            }
-            catch (InterruptedException e){
-                e.printStackTrace();
-            }
         }
     }
 
