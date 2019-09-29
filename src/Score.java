@@ -1,4 +1,6 @@
-//package skeletonCodeAssgnmt4;
+/**
+ * This Class Score has counters for caught and missed words as well as the score
+ */
 
 public class Score {
 	private int missedWords;

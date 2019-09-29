@@ -85,14 +85,15 @@ public class WordRecord {
 
 	}
 	
-	public synchronized boolean matchWord(String typedText) {
+	public synchronized boolean matchWord(String typedText) throws NullPointerException{
 		//System.out.println("Matching against: "+text);
 		if (typedText.equals(this.text)) {
 			resetWord();
 			return true;
 		}
-		else
+		else {
 			return false;
+		}
 	}
 	
 
