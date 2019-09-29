@@ -1,4 +1,9 @@
 //package skeletonCodeAssgnmt2;
+/**
+ * driver class from falling words game
+ * 28 sept 2019
+ * edited by Jesse smart
+ */
 
 import javax.swing.*;
 
@@ -11,7 +16,8 @@ import java.io.IOException;
 
 import java.util.Scanner;
 import java.util.concurrent.*;
-//model is separate from the view.
+
+
 
 public class WordApp {
 //shared variables
@@ -31,9 +37,9 @@ public class WordApp {
 	static WordPanel w;
 	static volatile String text = "";
     static JFrame frame;
-    static JLabel missed;
-    static JLabel caught;
-    static JLabel scr;
+    static volatile JLabel missed;
+    static volatile JLabel caught;
+    static volatile JLabel scr;
 	
 	
 	
@@ -97,7 +103,7 @@ public class WordApp {
 
 		      }
 		    });
-		JButton endB = new JButton("End");
+		JButton endB = new JButton("Reset");
 
 				endB.addActionListener(new ActionListener()
 			    {
@@ -108,8 +114,8 @@ public class WordApp {
 			    	  startB.setEnabled(true);
 			    	  score.resetScore();
                       caught.setText("Caught: " + score.getCaught() + "    ");
-                      missed.setText("Missed:" + score.getMissed()+ "    ");
-                      scr.setText("Score:" + score.getScore()+ "    ");
+                      missed.setText("Missed: " + score.getMissed()+ "    ");
+                      scr.setText("Score: " + score.getScore()+ "    ");
                       UpdateScreen();
 			      }
 			    });
@@ -125,6 +131,7 @@ public class WordApp {
                 else { WordPanel.done = true;
                     WordPanel.setbacktozero();
                     StartGame();
+                    textEntry.requestFocus();
                 }
             }
         });
@@ -155,13 +162,13 @@ public class WordApp {
 		
 	}
 
-    public static void UpdateScreen(){
+    public static synchronized void  UpdateScreen(){
 	    for (int i = 0; i < noWords; i++){
 	        words[i].resetPos();
 	        words[i].getWord();
         }
     }
-    public static void ViewinfoBox()
+    public static synchronized void ViewinfoBox()
     {
         JOptionPane.showMessageDialog(null, "Your Score: " + score.getScore() + "\n" + "Words caught: "
                         + score.getCaught() + "\n"
@@ -194,6 +201,17 @@ public class WordApp {
             Thread Wthread = new Thread(w);
             Wthread.start();
         }
+    }
+    public static synchronized void setCaught(){
+        caught.setText("Caught: " + score.getCaught() + "    ");
+    }
+
+    public static synchronized void setScore(){
+        scr.setText("Score: " + score.getScore() + "    ");
+    }
+
+    public static synchronized void setMissed(){
+        missed.setText("Missed: " + score.getMissed()+ "    ");
     }
 
 

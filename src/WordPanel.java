@@ -16,7 +16,7 @@ public class WordPanel extends JPanel implements Runnable {
 		private WordRecord[] words;
 		private int noWords;
 		private int maxY;
-		static volatile int inc = 0;
+		static volatile int inc = 0; // to assign wordrecords to threads
 
 
 		public void paintComponent(Graphics g) {
@@ -79,8 +79,8 @@ public class WordPanel extends JPanel implements Runnable {
 
                 if (current.matchWord(WordApp.text)) {
                     WordApp.score.caughtWord(WordApp.text.length());
-                    WordApp.caught.setText("Caught: " + WordApp.score.getCaught() + "    ");
-                    WordApp.scr.setText("Score:" + WordApp.score.getScore()+ "    ");
+                    WordApp.setCaught();
+                    WordApp.setScore();
                     current.resetWord();
                     repaint();
                 }
@@ -88,7 +88,7 @@ public class WordPanel extends JPanel implements Runnable {
                 if (current.dropped()) {
                     WordApp.score.missedWord();
                     current.resetWord();
-                    WordApp.missed.setText("Missed:" + String.valueOf(WordApp.score.getMissed()) + "    ");
+                    WordApp.setMissed();
                     repaint();
                 }
             }

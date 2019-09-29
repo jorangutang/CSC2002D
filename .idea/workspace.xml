@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52201ee3-1044-4c84-9d05-a9974cca2daf" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Score.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordApp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordApp$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordApp$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordApp.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WordApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordPanel.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WordPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordRecord.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,10 +27,26 @@
       <file leaf-file-name="WordApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WordApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="194" column="28" selection-start-line="194" selection-start-column="28" selection-end-line="194" selection-end-column="28" />
+            <state relative-caret-position="204">
+              <caret line="45" column="66" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
               <folding>
+                <element signature="method#setupGUI#0;class#WordApp#0" />
+                <element signature="class#1817:2041" />
+                <element signature="method#actionPerformed#0;class#1817:2041" />
+                <element signature="class#2387:2667" />
+                <element signature="method#actionPerformed#0;class#2387:2667" />
+                <element signature="class#2741:3259" />
+                <element signature="method#actionPerformed#0;class#2741:3259" />
+                <element signature="class#3362:3778" />
+                <element signature="method#actionPerformed#0;class#3362:3778" />
+                <element signature="class#3860:4052" />
+                <element signature="method#actionPerformed#0;class#3860:4052" />
+                <element signature="method#UpdateScreen#0;class#WordApp#0" />
+                <element signature="method#ViewinfoBox#0;class#WordApp#0" />
                 <element signature="method#getDictFromFile#0;class#WordApp#0" />
+                <element signature="method#StartGame#0;class#WordApp#0" />
+                <element signature="method#main#0;class#WordApp#0" />
+                <element signature="e#6129#6178#0" />
               </folding>
             </state>
           </provider>
@@ -31,9 +55,10 @@
       <file leaf-file-name="WordPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+            <state relative-caret-position="-609">
+              <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
               <folding>
+                <element signature="method#paintComponent#0;class#WordPanel#0" />
                 <element signature="e#1195#1196#0" expanded="true" />
                 <element signature="e#1225#1226#0" expanded="true" />
                 <element signature="e#1292#1293#0" expanded="true" />
@@ -46,7 +71,7 @@
       <file leaf-file-name="WordRecord.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordRecord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="1360">
               <caret line="94" column="20" lean-forward="true" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
               <folding>
                 <element signature="e#1759#1760#0" expanded="true" />
@@ -68,8 +93,8 @@
       <file leaf-file-name="Score.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Score.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-136">
-              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="340">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
               <folding>
                 <element signature="e#285#286#0" expanded="true" />
                 <element signature="e#310#311#0" expanded="true" />
@@ -100,17 +125,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/WordDictionary.java" />
-        <option value="$PROJECT_DIR$/src/Score.java" />
         <option value="$PROJECT_DIR$/src/WordRecord.java" />
+        <option value="$PROJECT_DIR$/src/Score.java" />
         <option value="$PROJECT_DIR$/src/WordPanel.java" />
         <option value="$PROJECT_DIR$/src/WordApp.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="806" />
-    <option name="width" value="801" />
-    <option name="height" value="867" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="792" />
+    <option name="y" value="-8" />
+    <option name="width" value="816" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -218,7 +244,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="792" y="-8" width="816" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -310,7 +336,23 @@
         <state relative-caret-position="204">
           <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
+            <element signature="method#setupGUI#0;class#WordApp#0" />
+            <element signature="class#1817:2041" />
+            <element signature="method#actionPerformed#0;class#1817:2041" />
+            <element signature="class#2387:2667" />
+            <element signature="method#actionPerformed#0;class#2387:2667" />
+            <element signature="class#2741:3259" />
+            <element signature="method#actionPerformed#0;class#2741:3259" />
+            <element signature="class#3362:3778" />
+            <element signature="method#actionPerformed#0;class#3362:3778" />
+            <element signature="class#3860:4052" />
+            <element signature="method#actionPerformed#0;class#3860:4052" />
+            <element signature="method#UpdateScreen#0;class#WordApp#0" />
+            <element signature="method#ViewinfoBox#0;class#WordApp#0" />
             <element signature="method#getDictFromFile#0;class#WordApp#0" />
+            <element signature="method#StartGame#0;class#WordApp#0" />
+            <element signature="method#main#0;class#WordApp#0" />
+            <element signature="e#6129#6178#0" />
           </folding>
         </state>
       </provider>
@@ -327,6 +369,7 @@
         <state>
           <caret column="2" selection-start-column="2" selection-end-column="2" />
           <folding>
+            <element signature="method#paintComponent#0;class#WordPanel#0" />
             <element signature="e#1195#1196#0" expanded="true" />
             <element signature="e#1225#1226#0" expanded="true" />
             <element signature="e#1292#1293#0" expanded="true" />
@@ -380,17 +423,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Score.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        <state relative-caret-position="340">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
           <folding>
             <element signature="e#285#286#0" expanded="true" />
             <element signature="e#310#311#0" expanded="true" />
@@ -406,9 +442,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/WordRecord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="1360">
           <caret line="94" column="20" lean-forward="true" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
           <folding>
             <element signature="e#1759#1760#0" expanded="true" />
@@ -419,9 +462,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WordPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        <state relative-caret-position="-609">
+          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
           <folding>
+            <element signature="method#paintComponent#0;class#WordPanel#0" />
             <element signature="e#1195#1196#0" expanded="true" />
             <element signature="e#1225#1226#0" expanded="true" />
             <element signature="e#1292#1293#0" expanded="true" />
@@ -432,10 +476,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WordApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="194" column="28" selection-start-line="194" selection-start-column="28" selection-end-line="194" selection-end-column="28" />
+        <state relative-caret-position="204">
+          <caret line="45" column="66" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
           <folding>
+            <element signature="method#setupGUI#0;class#WordApp#0" />
+            <element signature="class#1817:2041" />
+            <element signature="method#actionPerformed#0;class#1817:2041" />
+            <element signature="class#2387:2667" />
+            <element signature="method#actionPerformed#0;class#2387:2667" />
+            <element signature="class#2741:3259" />
+            <element signature="method#actionPerformed#0;class#2741:3259" />
+            <element signature="class#3362:3778" />
+            <element signature="method#actionPerformed#0;class#3362:3778" />
+            <element signature="class#3860:4052" />
+            <element signature="method#actionPerformed#0;class#3860:4052" />
+            <element signature="method#UpdateScreen#0;class#WordApp#0" />
+            <element signature="method#ViewinfoBox#0;class#WordApp#0" />
             <element signature="method#getDictFromFile#0;class#WordApp#0" />
+            <element signature="method#StartGame#0;class#WordApp#0" />
+            <element signature="method#main#0;class#WordApp#0" />
+            <element signature="e#6129#6178#0" />
           </folding>
         </state>
       </provider>
